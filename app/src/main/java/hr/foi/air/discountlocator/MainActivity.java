@@ -10,17 +10,45 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import android.os.Bundle;
+//tu je bilo
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+import hr.foi.air.core.DataLoadedListener;
+import hr.foi.air.core.DataLoader;
+import hr.foi.air.database.entities.Discount;
+import hr.foi.air.database.entities.Store;
+import hr.foi.air.discountlocator.loaders.DbDataLoader;
+import hr.foi.air.discountlocator.loaders.WsDataLoader;
+import hr.foi.air.discountlocator.recyclerview.ExpandableStoreItem;
+import hr.foi.air.discountlocator.recyclerview.StoreRecyclerAdapter;
+
+
+ //tu je bilo   
+
 
 import com.google.android.material.navigation.NavigationView;
 
 import hr.foi.air.discountlocator.fragments.DiscountListFragment;
 
 public class MainActivity extends AppCompatActivity {
+    //ovo je test za drugu granu
+    @BindView(R.id.main_recycler)
+    RecyclerView recyclerView;
+  
     Toolbar toolbar;
     private AppBarConfiguration mAppBarConfiguration;
     private DrawerLayout drawer;
     private NavigationView navigationView;
     private NavController navController;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
