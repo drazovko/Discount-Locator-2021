@@ -21,7 +21,7 @@ import hr.foi.air.discountlocator.loaders.DbDataLoader;
 import hr.foi.air.discountlocator.loaders.WsDataLoader;
 
 public class MainActivity extends AppCompatActivity implements DataLoadedListener {
-
+    //ovo je promjena za prvu granu
     @BindView(R.id.discount_list)
     ListView mListView;
 
